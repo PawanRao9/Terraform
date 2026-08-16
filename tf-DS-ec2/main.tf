@@ -53,6 +53,3 @@ resource "aws_instance" "my_server" {
     "name" = MY_SERVER
   }
 }
-
-
-
