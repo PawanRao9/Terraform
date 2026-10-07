@@ -54,7 +54,12 @@ resource "aws_s3_bucket_policy" "policies" {
 }
 
 resource "aws_s3_bucket_website_configuration" "my_web_app" {
-  bucket = aws_s3_bucket.example.id
+  bucket = aws_s3_bucket.example.id.id
+
+  error_document {
+    key = "error.html"
+  }
+
 
   index_document {
     suffix = "index.html"

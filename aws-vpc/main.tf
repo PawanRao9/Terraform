@@ -57,6 +57,6 @@ resource "aws_route_table_association" "public_sub" {
   subnet_id      = aws_subnet.public_subnet.id
 }
 
-variable "region" {
+# variable "region" {
 
-}
+# }
